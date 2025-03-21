@@ -5,17 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yemek Teklifi</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/@netlify/identity-widget@1.9.1" defer></script>
 </head>
 <body>
-  <div id="netlify-identity-widget"></div>
   <div id="app">
     <h1>Yemek Teklifi Platformu</h1>
-    <div id="auth-section">
+    <div id="auth-section" style="display: none;">
       <button id="login-btn">Giriş Yap</button>
       <button id="logout-btn" style="display: none;">Çıkış Yap</button>
     </div>
-    <div id="offer-section" style="display: none;">
+    <div id="offer-section">
       <h2>Teklif Oluştur</h2>
       <form id="offer-form">
         <label for="food">Yemek:</label>
