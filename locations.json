@@ -1,0 +1,10 @@
+{
+    "İstanbul": {
+      "Kadıköy": ["Moda", "Caferağa", "Fenerbahçe"],
+      "Beşiktaş": ["Etiler", "Levent", "Ortaköy"]
+    },
+    "Ankara": {
+      "Çankaya": ["Kızılay", "Bahçelievler", "Dikmen"],
+      "Keçiören": ["Etlik", "İncirli", "Aktepe"]
+    }
+  }

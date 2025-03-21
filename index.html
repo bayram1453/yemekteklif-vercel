@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yemek Teklifi</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@netlify/identity-widget@1.9.1" defer></script>
+</head>
+<body>
+  <div id="netlify-identity-widget"></div>
+  <div id="app">
+    <h1>Yemek Teklifi Platformu</h1>
+    <div id="auth-section">
+      <button id="login-btn">Giriş Yap</button>
+      <button id="logout-btn" style="display: none;">Çıkış Yap</button>
+    </div>
+    <div id="offer-section" style="display: none;">
+      <h2>Teklif Oluştur</h2>
+      <form id="offer-form">
+        <label for="food">Yemek:</label>
+        <input type="text" id="food" required><br>
+        <label for="price">Fiyat (TL):</label>
+        <input type="number" id="price" required><br>
+        <label for="il">İl:</label>
+        <select id="il" required></select><br>
+        <label for="ilce">İlçe:</label>
+        <select id="ilce" required></select><br>
+        <label for="mahalle">Mahalle:</label>
+        <select id="mahalle" required></select><br>
+        <label for="deliveryTime">Teslimat Zamanı:</label>
+        <input type="datetime-local" id="deliveryTime" required><br>
+        <label for="allergy">Alerji Bilgisi:</label>
+        <input type="text" id="allergy"><br>
+        <label for="offerDuration">Teklif Süresi (saat):</label>
+        <input type="number" id="offerDuration" required><br>
+        <button type="submit">Teklif Oluştur</button>
+      </form>
+    </div>
+    <div id="offers-section">
+      <h2>Mevcut Teklifler</h2>
+      <div id="offers-list"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
