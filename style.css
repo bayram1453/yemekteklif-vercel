@@ -43,3 +43,15 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
   }
+  /* Mevcut stillerin altına ekle */
+.offer {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.offer p {
+  margin: 5px 0;
+}
